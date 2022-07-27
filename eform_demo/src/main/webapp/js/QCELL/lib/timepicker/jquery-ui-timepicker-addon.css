@@ -1,0 +1,30 @@
+.rt-qc-ui-timepicker-div .rt-qc-ui-timepicker-header { margin-bottom: 8px; color: #333333; font-weight: bold; border-bottom: 1px solid #e5e8ec;}
+.rt-qc-ui-timepicker-div dl { text-align: left; }
+.rt-qc-ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+.rt-qc-ui-timepicker-div dl dd { margin: 0 10px 10px 40%; }
+.rt-qc-ui-timepicker-div td { font-size: 90%; }
+.rt-qc-ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+.rt-qc-ui-timepicker-div .rt-qc-ui_tpicker_unit_hide{ display: none; }
+
+.rt-qc-ui-timepicker-div .rt-qc-ui_tpicker_time .rt-qc-ui_tpicker_time_input { background: none; color: inherit; border: none; outline: none; border-bottom: solid 1px #555; width: 95%; }
+.rt-qc-ui-timepicker-div .rt-qc-ui_tpicker_time .rt-qc-ui_tpicker_time_input:focus { border-bottom-color: #aaa; }
+
+.rt-qc-ui-timepicker-rtl{ direction: rtl; }
+.rt-qc-ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.rt-qc-ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.rt-qc-ui-timepicker-rtl dl dd { margin: 0 40% 10px 10px; }
+
+/* Shortened version style */
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine { padding-right: 2px; }
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine .rt-qc-ui_tpicker_time, 
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine dt { display: none; }
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine .ui_tpicker_time_label { display: block; padding-top: 2px; }
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine dl { text-align: right; }
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine dl dd, 
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine dl dd > div { display:inline-block; margin:0; }
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine dl dd.rt-qc-ui_tpicker_minute:before,
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine dl dd.rt-qc-ui_tpicker_second:before { content:':'; display:inline-block; }
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine dl dd.rt-qc-ui_tpicker_millisec:before,
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine dl dd.rt-qc-ui_tpicker_microsec:before { content:'.'; display:inline-block; }
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine .rt-qc-ui_tpicker_unit_hide,
+.rt-qc-ui-timepicker-div.rt-qc-ui-timepicker-oneLine .rt-qc-ui_tpicker_unit_hide:before{ display: none; }

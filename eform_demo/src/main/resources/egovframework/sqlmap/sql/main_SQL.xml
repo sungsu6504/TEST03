@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main">
+	<select id="selectSample" parameterType="java.util.HashMap"	resultType="java.util.HashMap">		
+		/* main.selectSample */
+		SELECT TEST1
+		      ,TEST2
+  		  FROM TB_TEST01
+	</select>
+	
+	<insert id="insertSample" parameterType="java.util.HashMap">
+		/* main.insertSample */
+		INSERT 
+		  INTO TB_TEST01 (TEST1,TEST2)
+		SELECT MAX(TEST1) + 1
+		      ,NVL(#{name},"TEST")
+		  FROM TB_TEST01
+	</insert>
+	
+	<insert id="insertSampleTest" parameterType="java.util.HashMap">
+		/* main.insertSample */
+		INSERT 
+		  INTO TB_TEST01 (TEST1,TEST2)
+		SELECT MAX(TEST1) + 1
+		      ,NVL(#{name},"TEST")
+		  FROM TB_TEST01aa
+	</insert>
+	
+	<update id="updateSample" parameterType="java.util.HashMap">
+		/* main.updateSample */
+		
+	</update>
+	
+	<update id="deleteSample" parameterType="java.util.HashMap">
+		/* main.deleteSample */
+		
+	</update>
+
+</mapper>
